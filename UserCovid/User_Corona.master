@@ -1,0 +1,339 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User_Corona.master.cs" Inherits="UserCovid_User_Corona" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from demos.codexcoder.com/labartisan/html/covid-19/index-7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Apr 2021 17:01:22 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/01.png">
+
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/icofont.min.css">
+		<link rel="stylesheet" href="assets/css/lightcase.css">
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		
+        <link href=" ../AdminDOC/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../AdminDOC/css/remixicon.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Css -->
+        <link href="../AdminDOC/css/style.min.css" rel="stylesheet" type="text/css" />
+         <link href="../AdminDOC/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Select2 -->
+        <link rel="stylesheet" href="../AdminDOC/css/select2.min.css"/>
+        <link rel="stylesheet" href=" ../AdminDOC/line.css">
+       
+
+		<title>Covid-19</title>
+	</head>
+
+	<body>
+		<!-- Mobile Menu Start Here -->
+		<div class="mobile-menu">
+			<nav class="mobile-header">
+				<div class="header-logo">
+					<a href="index.html"><img src="assets/images/logo/04.png" alt="logo"></a>
+				</div>
+				<div class="header-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+			<nav class="mobile-menu">
+				<div class="mobile-menu-area">
+					<div class="mobile-menu-area-inner">
+						<ul class="lab-ul">
+                       
+                          
+                           <li><a href="Sta">Hospital User</a></li>
+                            <li><a href="#">Outbreak</a>
+                                <ul class="lab-ul">
+                                    <li><a href="#0">State Wise</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Tab_outbreak.aspx">Table Format</a></li>
+                                            <li><a href="State_Outbreak.aspx">Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#0">City Wise</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Tab_outbreak_city.aspx">Table Format</a></li>
+                                            <li><a href="City_Outbreak.aspx">Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
+                                     <li><a href="#">Vaccine</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Vaccineinfo.aspx">Vaccine Centre</a></li>
+                                            <li><a href="dummycerti.aspx">View Certificate</a></li>
+                                            <li><a href="dummyinvoice.aspx">View Invoice</a></li>
+                                            <li><a href="../UserDoc/Appointment.aspx">Book Appointment</a></li>
+                                            </ul>
+                            
+                                    </li>
+                                    <li><a href="#">Bed Booking</a>
+                                        <ul class="lab-ul">
+                                           <li><a href="BedInfo.aspx">BED INFORMATION</a></li>
+                                            <li><a href="BBookDone.aspx">VIEW BED BILL</a></li>
+                                           <li><a href="../PaymentB/CashF.aspx">Pay Bill Here</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="#">Covid Test</a>
+                                        <ul class="lab-ul">
+                                            
+                                            <li><a href="../UserCovid/adclogin/Test_Request.aspx">Request for Corona Test</a></li>
+                                            <li><a href="dummytestres.aspx">View Covid Test Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#0">Authentcation</a>
+                                        <ul class="lab-ul">                                       
+                                            <li><a href="../UserCovid/adclogin/PRegister.aspx">REGISTER</a></li>
+                                            <li><a href="../UserCovid/adclogin/Plogin.aspx">LOGIN</a></li>
+                                            <li><a href="../UserCovid/ULogout.aspx">LOGOUT</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <%--<li><a href="contact.html">Contact</a></li>--%>
+                                </ul>
+							</div>
+							<%--<div class="header-btn">
+								<a href="plazma.aspx" class="lab-btn"><span>Donate<i class="icofont-heart"></i></span></a>
+							</div>--%>
+                            <li><a href="contact.html">Contact</a></li>
+                        
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Mobile Menu Ending Here -->
+
+		<!-- desktop menu start here -->
+		<header class="header-section home-7">
+			<div class="header-area">
+				<div class="container">
+					<div class="primary-menu">
+						<div class="logo">
+							<a href="Uhome.aspx"><img src="assets/images/logo/01.png" alt="logo"></a>
+                        </div>
+						<div class="main-area">
+							<div class="main-menu">
+								<ul class="lab-ul">
+                                    <%--<li class="active"><a href="Uhome.aspx">Home</a>
+                                        
+                                    </li>--%>
+                                       <li><a href="Uhome.aspx">Home</a>
+                                        <ul class="lab-ul">                                           
+                                            <li><a href="../UserDoc/Uhome.aspx">Hospital User</a></li>
+                                            </ul>
+                                            </li>
+                                     <li><a href="#">Outbreak</a>
+                                     
+                                <ul class="lab-ul">
+                                    <li><a href="#0">State Wise</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Tab_outbreak.aspx">Table Format</a></li>
+                                            <li><a href="State_Outbreak.aspx">Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#0">City Wise</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Tab_outbreak_city.aspx">Table Format</a></li>
+                                            <li><a href="City_Outbreak.aspx">Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                                    <li><a href="#">Vaccine</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="Vaccineinfo.aspx">Vaccine Center</a></li>
+                                            <li><a href="dummycerti.aspx">View Certificate</a></li>
+                                            <li><a href="dummyinvoice.aspx">View Invoice</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Patient</a>
+                                        <ul class="lab-ul">
+                                           <li><a href="BedInfo.aspx">BED INFORMATION</a></li>
+                                            <li><a href="BBookDone.aspx">VIEW BED BILL</a></li>
+                                           <li><a href="../PaymentB/CashF.aspx">Pay Bill Here</a></li>
+                                           <li><a href="../UserDoc/Appointment.aspx">Book Appointment</a></li>
+                                              <li><a href="../UserCovid/dummyappi.aspx">Appointment Invoice</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    
+                                    <li><a href="#">Covid Test</a>
+                                        <ul class="lab-ul">
+                                            
+                                            <li><a href="../UserCovid/adclogin/Test_Request.aspx">Request for Corona Test</a></li>
+                                            <li><a href="dummytestres.aspx">View Covid Test Report</a></li>
+                                            <li><a href="dumTestI.aspx">View Covid Test Invoice</a></li
+                                        </ul>
+                                    </li>
+                                    
+                                    <%--<li><a href="contact.html">Contact</a></li>--%>
+                                </ul>
+                                <li><a href="#0">Authentication</a>
+                                        <ul class="lab-ul">
+                                         <li><a href="Uview.aspx">View Profile</a></li>
+                                            <li><a href="Uedit.aspx">Edit Profile</a></li>
+                                            
+                                            <li><a href="../UserCovid/ULogout.aspx">LOGOUT</a></li>
+                                        </ul>
+                                    </li>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- desktop menu ending here -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+		<!-- Footer Section Start Here -->
+		<footer style="background-image: url(assets/css/bg-image/bg-5.jpg);">
+			<div class="footer-top padding-tb">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-item first-set">
+								<div class="footer-inner">
+									<div class="footer-content">
+										<div class="title">
+											<h6>About Covid-19</h6>
+										</div>
+										<div class="content">
+											<p>We believe in Providing Reliable information to our users.</p>
+											<h6>Headquarters:</h6>
+											<p>CB PATEL COMPUTER COLLEGE</p>
+											<ul class="lab-ul">
+												<li>
+													<p><span>Phone:</span>(91) 8547 632521</p>
+												</li>
+												<li>
+													<p><span>Email:</span><a href="https://accounts.google.com/ServiceLogin/signinchooser?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin">publichealthcare2000@gmail.com</a></p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-item">
+								<div class="footer-inner">
+									<div class="footer-content">
+										<div class="title">
+											<h6>Navigate</h6>
+										</div>
+										<div class="content">
+											<ul class="lab-ul">
+												<li><a href="Aboutus.aspx"><i class="icofont-caret-right"></i>About Us</a></li>
+												<li><a href="Contactus.aspx"><i class="icofont-caret-right"></i>Contact Us</a></li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-item">
+								<div class="footer-inner">
+									<div class="footer-content">
+										<div class="title">
+											<h6>Social Contact</h6>
+										</div>
+										<div class="content">
+											<ul class="lab-ul">
+												<li><a href="https://www.facebook.com/"><i class="icofont-facebook"></i>Facebook</a></li>
+												<li><a href="https://twitter.com/"><i class="icofont-twitter"></i>Twitter</a></li>
+												<li><a href="https://www.instagram.com/"><i class="icofont-instagram"></i>Instagram</a></li>
+												<li><a href="https://www.youtube.com/"><i class="icofont-youtube"></i>YouTube</a></li>												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-item">
+								<div class="footer-inner">
+									<div class="footer-content">
+										<div class="title">
+											<h6>Privacy And Tos</h6>
+										</div>
+										<div class="content">
+											<ul class="lab-ul">
+												<li><a href="#"><i class="icofont-caret-right"></i>Advertiser Agreement</a></li>
+												<li><a href="#"><i class="icofont-caret-right"></i>Acceptable Use Policy</a></li>
+												<li><a href="#"><i class="icofont-caret-right"></i>Privacy Policy</a></li>
+												<li><a href="#"><i class="icofont-caret-right"></i>Technology Privacy</a></li>
+												<li><a href="#"><i class="icofont-caret-right"></i>Developer Agreement</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom" style="border-color: #ffffff40">
+				<div class="container">
+					<div class="section-wrapper">
+						<p>&copy; 2020 All Rights Reserved. Designed by <a href="#">Raj & Jaimin</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section Ending Here -->
+
+		<!-- scrollToTop start here -->
+		<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i><span class="pluse_1"></span><span class="pluse_2"></span></a>
+		<!-- scrollToTop ending here -->
+
+		
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/lightcase.js"></script>
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+		<script src="assets/js/jquery.countdown.min.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/functions.js"></script>
+
+
+        <script src="../AdminDOC/js/jquery-3.5.1.min.js"></script>
+        <script src="../AdminDOC/js/bootstrap.bundle.min.js"></script>
+        <!-- Select2 -->
+        <script src="../AdminDOC/js/select2.min.js"></script>
+        <script src="../AdminDOC/js/select2.init.js"></script>
+        <!-- Datepicker -->
+        <script src="../AdminDOC/js/flatpickr.min.js"></script>
+        <script src="../AdminDOC/js/flatpickr.init.js"></script>
+        <!-- Datepicker -->
+        <script src="../AdminDOC/js/jquery.timepicker.min.js"></script> 
+        <script src="../AdminDOC/js/timepicker.init.js"></script> 
+        <!-- Icons -->
+        <script src="../AdminDOC/js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="../AdminDOC/js/app.js"></script>
+	</body>
+
+<!-- Mirrored from demos.codexcoder.com/labartisan/html/covid-19/index-7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Apr 2021 17:02:28 GMT -->
+</html>
